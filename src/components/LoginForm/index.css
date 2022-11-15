@@ -1,0 +1,123 @@
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.input-label {
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 16px;
+  color: #475569;
+  margin-bottom: 0px;
+  margin-left: 2px;
+  letter-spacing: 1.5px;
+}
+
+.username-input-field,
+.password-input-field {
+  font-family: 'Roboto';
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #64748b;
+  height: 40px;
+  background-color: #e2e8f0;
+  border: 1px solid #d7dfe9;
+  margin-top: 5px;
+  border-radius: 2px;
+  padding: 8px 16px;
+}
+
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 90%;
+  max-width: 1110px;
+  margin: auto;
+}
+
+.login-website-logo-mobile-img {
+  width: 165px;
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+
+.login-img {
+  width: 278px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 350px;
+}
+
+.login-website-logo-desktop-img {
+  width: 185px;
+}
+
+.login-button {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ffffff;
+  background-color: #0b69ff;
+  height: 40px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.error-message {
+  font-family: 'Roboto';
+  font-size: 12px;
+  align-self: start;
+  margin-top: 3px;
+  margin-bottom: 0px;
+  line-height: 16px;
+  color: #ff0b37;
+}
+
+@media screen and (min-width: 992px) {
+  .login-form-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .login-website-logo-mobile-img {
+    display: none;
+  }
+
+  .login-img {
+    width: 60%;
+    max-width: 524px;
+    flex-shrink: 1;
+    margin-right: 20px;
+  }
+
+  .login-form {
+    width: 350px;
+    flex-shrink: 0;
+    box-shadow: 0px 8px 40px rgba(7, 7, 7, 0.08);
+    padding: 64px 48px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .login-website-logo-desktop-img {
+    display: none;
+  }
+}
